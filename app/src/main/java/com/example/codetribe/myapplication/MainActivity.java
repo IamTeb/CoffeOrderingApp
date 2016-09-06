@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void submitOrder(View view) {
         int price = quantity * 5;
-        String priceMessage = "Amount Due : R" + price;
+        String priceMessage = "Amount Due Is : R" + price;
         priceMessage = priceMessage + "\nThank You!";
         displayMessage(priceMessage);
     }
@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
     }
     public void display(int number) {
         TextView quantityTextView = (TextView) findViewById(R.id.quantity_text_view);
-        quantityTextView.setText("" + number);
+        //quantityTextView.setText("" + number);
     }
     public void displayMessage(String message)
     {
